@@ -8,7 +8,7 @@ createApp({
     },
     mounted() {
     axios
-        .get('http://localhost/php/php-todo-list-json/frontend/index.html')
+        .get('http://localhost/php/php-todo-list-json/frontend/index.php')
         .then((res) => {
             console.log (res.data);
         });

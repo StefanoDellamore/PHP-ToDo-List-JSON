@@ -1,19 +1,17 @@
 const { createApp } = Vue;
 
 createApp({
-    data() {
-        return {
-            prova: 'prova'
-        };
+        data() {
+            return {
+                task: [],
+            };
     },
     mounted() {
-    axios
-        .get('http://localhost/php/php-todo-list-json/frontend/index.php')
-        .then((res) => {
-            console.log (res.data);
-        });
-}
-})
-    
-
-
+        axios
+            .get('http://localhost/php/Php-todo-list-json/backend/index.php')
+            .then((res) => {
+                console.log (res);
+                this.task = res.data;
+            });
+        }
+}).mount('#app');

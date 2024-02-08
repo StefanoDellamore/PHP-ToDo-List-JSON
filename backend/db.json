@@ -1,0 +1,24 @@
+[
+    {
+        "task" : "studiare",
+        "status" : true
+    },
+    {
+        "task" : "lavare",
+        "status" : false
+    },
+    {
+        "task" : "meditare",
+        "status" : true
+    },
+    {
+        "task" : "ascoltare musica",
+        "status" : false
+    },
+    {
+        "task" : "giocare ai videogames",
+        "status" : false
+    }
+    
+]
+

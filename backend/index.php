@@ -1,15 +1,9 @@
 <?php
 
-$todo = [
-    [
-        'name' => 'stefano',
-        'last_name' => 'Della'
-    ],
-    [
-        'name' => 'stefa',
-        'last_name' => 'Del'
-    ]
-];
+$db = file_get_contents('db.json');
+    
+$tasks = json_decode($db, true);
 
+header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
-echo json_encode($todo);
+echo $db;

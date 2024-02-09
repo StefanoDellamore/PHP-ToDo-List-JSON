@@ -1,3 +1,5 @@
+Giorno 1
+
 Dobbiamo creare una web-app che permetta di leggere una lista di Todo.
 Deve essere anche gestita la persistenza dei dati leggendoli da un file JSON.
 
@@ -11,3 +13,16 @@ Solo a questo punto sarà utile passare alla lettura della lista da un file JSON
 
 Bonus
 Mostrare lo stato del task → se completato, barrare il testo
+
+
+Giorno 2
+
+Descrizione
+Aggiungiamo la possibilità di scrivere nella lista di Todo creata ieri (sempre in persistenza, scrivendoli nel file JSON).
+
+Bonus
+1-Permettere di segnare un task come completato facendo click sul testo
+
+2-Permettere il toggle del task (completato/non completato)
+
+3-Abilitare l'eliminazione di un task

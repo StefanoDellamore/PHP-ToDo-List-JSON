@@ -4,6 +4,7 @@ createApp({
         data() {
             return {
                 todos: [],
+                newTodo: ''
             };
     },
     created() {
@@ -13,5 +14,23 @@ createApp({
                 console.log (res.data);
                 this.todos = res.data;
             });
+    },
+    methods: {
+        addTodo() {
+            axios
+                .post('http://localhost/php/Php-todo-list-json/backend/create-todo.php',
+                    {
+                        task: this.newTodo
+                    },
+                    {
+                        headers: {
+                            'Content-Type' : 'multipart/form-data'
+                        }
+                    }
+                )
+                .then(res => {
+                    console.log(res);
+                });
         }
+    }
 }).mount('#app');

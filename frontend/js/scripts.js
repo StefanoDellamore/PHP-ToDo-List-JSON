@@ -30,6 +30,14 @@ createApp({
                 )
                 .then(res => {
                     console.log(res);
+                    if (res.data.code == 200) {
+                        this.todos.push ({
+                            task: this.newTodo,
+                            status: false
+                        });
+
+                        this.newTodo = '';
+                    }
                 });
         }
     }

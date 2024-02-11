@@ -15,7 +15,8 @@
                 <button @click="addTodo()">add</button>
             </div>
             <ul>
-                <li v-for="todo in todos" :class="{
+                <li v-for="todo in todos"
+                :class="{
                     'completed': todo.status == true
                 }">
                     {{todo.task}}
